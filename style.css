@@ -1,0 +1,150 @@
+body
+{
+    background-color: #333;
+}
+h1
+{
+    color: rgb(222, 218, 218);
+    text-align: center;
+    font-size: 50px;
+    font-family: Lucida Handwriting;
+    letter-spacing: 2px;
+    text-shadow: 10px 2px 5px rgba(132, 109, 109, 0.5);
+    
+
+    border: 2px solid #ccc;       /* Jasna, čista linija */
+    border-radius: 15px;           /* Zaobljeni uglovi */
+    padding: 10px 20px;           /* Dodatni prostor između teksta i linije */
+    margin: 20px auto;            /* Centriranje elementa i razmak od drugih elemenata */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(46, 46, 46);
+}
+img {
+    width: 100%;  
+    height: 400px;     /* Slika će zauzeti 50% širine roditeljskog elementa */
+    display: block;   /* Da bi margin auto radila ispravno */
+    margin: 0 auto;   /* Centriranje slike */
+    position: relative;
+    top: -21px;
+    border-radius: 15px; 
+}
+.image-container {
+    position: relative; /* Postavlja kontejner kao referencu za apsolutno pozicioniranje */
+    width: 50%;         /* Možeš prilagoditi širinu */
+    margin: 0 auto;     /* Centriranje kontejnera na stranici */
+}
+
+.image-container img {
+    display: block;
+    width: 300px;
+    height: 350px;
+}
+
+.image-container .overlay {
+    position: absolute;     /* Omogućava postavljanje preko prve slike */
+    top: -220px;               /* Pomeranje na 50% visine kontejnera */
+    left: -130px;              /* Pomeranje na 50% širine kontejnera */
+    transform: translate(-50%, -50%); /* Precizno centriranje overlay slike */
+    border-radius: 50%; /* Pravi krug */
+    object-fit: cover;
+}
+.prvi-tekst {
+    color: rgb(216, 216, 230);
+    font-size: 18px;
+    position: absolute;
+    top: 220px;
+    left: 550px;
+    max-width: 700px; /* Maksimalna širina teksta */
+    max-height: 1000px;
+    margin: 0 auto; /* Centriranje teksta */
+    padding: 20px;
+    background-color: rgba(96, 96, 96, 0.6); /* Poluprozirna pozadina za bolju čitljivost */
+    border: 2px solid transparent; /* Border ostaje proziran za prvi tekst */
+    border-radius: 10px;
+    text-align: left;
+    animation: border-animation 3s infinite alternate;
+animation: border-animation 3s infinite alternate;
+}
+
+@keyframes border-animation {
+    0% {
+        border-color: #ff7e5f; /* Početna boja (presijava crveno-narandžasta) */
+        box-shadow: 0 0 15px rgba(255, 126, 95, 0.8); /* Svetlosni efekat oko bordera */
+    }
+    50% {
+        border-color: #feb47b; /* Srednja boja (presijava zlatno) */
+        box-shadow: 0 0 25px rgba(254, 180, 123, 0.9); /* Jači svetlosni efekat */
+    }
+    100% {
+        border-color: #ff5f6d; /* Krajnja boja (presijava tamnije crveno-ružičasta) */
+        box-shadow: 0 0 35px rgba(255, 95, 109, 1); /* Najjači svetlosni efekat */
+    }
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.social-icon i {
+    margin-right: 8px;
+}
+.insta
+{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 530px;
+    left: 425px;
+}
+.fb
+{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 530px;
+    left: 675px;
+}
+.li 
+{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 530px;
+    left: 925px;
+}.messageSection {
+    position: absolute;
+    bottom: 20px;
+    left: 580px;
+    color: white;
+    top: 690px;
+    text-align: center;
+   
+}
+
+#githubButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#githubButton:hover {
+    background-color: #444;
+}
