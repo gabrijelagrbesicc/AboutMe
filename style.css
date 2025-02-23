@@ -12,26 +12,26 @@ h1
     text-shadow: 10px 2px 5px rgba(132, 109, 109, 0.5);
     
 
-    border: 2px solid #ccc;       /* Jasna, čista linija */
-    border-radius: 15px;           /* Zaobljeni uglovi */
-    padding: 10px 20px;           /* Dodatni prostor između teksta i linije */
-    margin: 20px auto;            /* Centriranje elementa i razmak od drugih elemenata */
+    border: 2px solid #ccc;       
+    border-radius: 15px;          
+    padding: 10px 20px;          
+    margin: 20px auto;           
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     background-color: rgb(46, 46, 46);
 }
 img {
     width: 100%;  
-    height: 400px;     /* Slika će zauzeti 50% širine roditeljskog elementa */
-    display: block;   /* Da bi margin auto radila ispravno */
-    margin: 0 auto;   /* Centriranje slike */
+    height: 400px;    
+    display: block;   
+    margin: 0 auto;   
     position: relative;
     top: -21px;
     border-radius: 15px; 
 }
 .image-container {
-    position: relative; /* Postavlja kontejner kao referencu za apsolutno pozicioniranje */
-    width: 50%;         /* Možeš prilagoditi širinu */
-    margin: 0 auto;     /* Centriranje kontejnera na stranici */
+    position: relative; 
+    width: 50%;         
+    margin: 0 auto;     
 }
 
 .image-container img {
@@ -41,11 +41,11 @@ img {
 }
 
 .image-container .overlay {
-    position: absolute;     /* Omogućava postavljanje preko prve slike */
-    top: -220px;               /* Pomeranje na 50% visine kontejnera */
-    left: -130px;              /* Pomeranje na 50% širine kontejnera */
-    transform: translate(-50%, -50%); /* Precizno centriranje overlay slike */
-    border-radius: 50%; /* Pravi krug */
+    position: absolute; 
+    top: -220px;        
+    left: -130px;       
+    transform: translate(-50%, -50%);
+    border-radius: 50%; 
     object-fit: cover;
 }
 .prvi-tekst {
@@ -54,12 +54,12 @@ img {
     position: absolute;
     top: 220px;
     left: 550px;
-    max-width: 700px; /* Maksimalna širina teksta */
+    max-width: 700px; 
     max-height: 1000px;
-    margin: 0 auto; /* Centriranje teksta */
+    margin: 0 auto;
     padding: 20px;
-    background-color: rgba(96, 96, 96, 0.6); /* Poluprozirna pozadina za bolju čitljivost */
-    border: 2px solid transparent; /* Border ostaje proziran za prvi tekst */
+    background-color: rgba(96, 96, 96, 0.6);
+    border: 2px solid transparent; 
     border-radius: 10px;
     text-align: left;
     animation: border-animation 3s infinite alternate;
@@ -68,16 +68,16 @@ animation: border-animation 3s infinite alternate;
 
 @keyframes border-animation {
     0% {
-        border-color: #ff7e5f; /* Početna boja (presijava crveno-narandžasta) */
-        box-shadow: 0 0 15px rgba(255, 126, 95, 0.8); /* Svetlosni efekat oko bordera */
+        border-color: #ff7e5f; 
+        box-shadow: 0 0 15px rgba(255, 126, 95, 0.8);
     }
     50% {
-        border-color: #feb47b; /* Srednja boja (presijava zlatno) */
-        box-shadow: 0 0 25px rgba(254, 180, 123, 0.9); /* Jači svetlosni efekat */
+        border-color: #feb47b; 
+        box-shadow: 0 0 25px rgba(254, 180, 123, 0.9);
     }
     100% {
-        border-color: #ff5f6d; /* Krajnja boja (presijava tamnije crveno-ružičasta) */
-        box-shadow: 0 0 35px rgba(255, 95, 109, 1); /* Najjači svetlosni efekat */
+        border-color: #ff5f6d; 
+        box-shadow: 0 0 35px rgba(255, 95, 109, 1); 
     }
 }
 
